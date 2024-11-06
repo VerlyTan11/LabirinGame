@@ -420,6 +420,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: DindingLabirin
       objectReference: {fileID: 0}
+    - target: {fileID: 3097028472203954572, guid: 2d658818720b11c40ab540950cbdf7b3, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -36.3
+      objectReference: {fileID: 0}
     - target: {fileID: 3303810105903336381, guid: 2d658818720b11c40ab540950cbdf7b3, type: 3}
       propertyPath: m_LocalPosition.z
       value: 13.9
@@ -454,7 +458,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4521391497605915141, guid: 2d658818720b11c40ab540950cbdf7b3, type: 3}
       propertyPath: m_LocalPosition.z
-      value: -10.4
+      value: -11.2
       objectReference: {fileID: 0}
     - target: {fileID: 4525302130225096587, guid: 2d658818720b11c40ab540950cbdf7b3, type: 3}
       propertyPath: m_LocalPosition.z
@@ -522,7 +526,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8459720757093267655, guid: 2d658818720b11c40ab540950cbdf7b3, type: 3}
       propertyPath: m_LocalPosition.x
-      value: -27.8
+      value: -27.4
       objectReference: {fileID: 0}
     - target: {fileID: 8459720757093267655, guid: 2d658818720b11c40ab540950cbdf7b3, type: 3}
       propertyPath: m_LocalPosition.z
@@ -567,6 +571,10 @@ PrefabInstance:
     - target: {fileID: 8602618693408377027, guid: 2d658818720b11c40ab540950cbdf7b3, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 9123066720180727465, guid: 2d658818720b11c40ab540950cbdf7b3, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -31.2
       objectReference: {fileID: 0}
     - target: {fileID: 9212027607468445263, guid: 2d658818720b11c40ab540950cbdf7b3, type: 3}
       propertyPath: m_LocalPosition.x
