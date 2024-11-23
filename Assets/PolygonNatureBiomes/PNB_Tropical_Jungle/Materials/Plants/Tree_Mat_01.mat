@@ -79,11 +79,11 @@ Material:
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     - _LeafAmbientOcclusion:
-        m_Texture: {fileID: 0}
+        m_Texture: {fileID: 2800000, guid: 959836486a862ce46bf27326e214508d, type: 3}
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     - _LeafNormalMap:
-        m_Texture: {fileID: 0}
+        m_Texture: {fileID: 2800000, guid: 959836486a862ce46bf27326e214508d, type: 3}
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     - _LeafTex:
@@ -155,7 +155,7 @@ Material:
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     - _TrunkAmbientOcclusion:
-        m_Texture: {fileID: 0}
+        m_Texture: {fileID: 2800000, guid: c57a714ed3e52f04282dfb9e18e7cf4a, type: 3}
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     - _TrunkEmissiveMask:
@@ -163,11 +163,11 @@ Material:
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     - _TrunkNormalMap:
-        m_Texture: {fileID: 0}
+        m_Texture: {fileID: 2800000, guid: c57a714ed3e52f04282dfb9e18e7cf4a, type: 3}
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     - _TunkTex:
-        m_Texture: {fileID: 2800000, guid: 53dc926ff48430643954b87f98f657d4, type: 3}
+        m_Texture: {fileID: 2800000, guid: c57a714ed3e52f04282dfb9e18e7cf4a, type: 3}
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     - _texcoord:
