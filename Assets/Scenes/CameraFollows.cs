@@ -1,8 +1,8 @@
 using UnityEngine;
 
-public class CameraController : MonoBehaviour
+public class CameraFollows : MonoBehaviour
 {
-    public Transform target; // Target yang akan diikuti oleh kamera
+    public Transform target; // Target yang akan diikuti oleh kamera (Lady Pirate)
     public Vector3 offset; // Jarak antara kamera dan target
     public float rotateSpeed = 5f; // Kecepatan rotasi kamera berdasarkan input mouse
 
