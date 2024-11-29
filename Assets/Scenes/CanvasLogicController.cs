@@ -46,6 +46,7 @@ public class GameController : MonoBehaviour
 
     void StartGame()
     {
+        Debug.Log("Start button clicked!");
         isGameRunning = true;
         isGamePaused = false;
 
@@ -59,6 +60,7 @@ public class GameController : MonoBehaviour
 
     void TogglePause()
     {
+        Debug.Log("Pause button clicked!");
         isGamePaused = !isGamePaused;
 
         if (isGamePaused)
