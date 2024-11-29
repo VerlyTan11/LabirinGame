@@ -5,7 +5,7 @@ public class Sc_player : MonoBehaviour {
     public float maximumY = 60f;
     private float speedPutar = 5f;
     private float normalSpeed = 5f;
-    private float runSpeed = 10f;
+    private float runSpeed = 20f;
     float rotationX = 0f;
     float rotationY = 0f;
     private Animator anim;
