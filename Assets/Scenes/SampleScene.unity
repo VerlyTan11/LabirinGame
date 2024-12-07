@@ -1867,6 +1867,11 @@ MonoBehaviour:
   - {fileID: 1427766693}
   - {fileID: 1996330452}
   numGemsToSpawn: 8
+--- !u!4 &288773134 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 4918862561244202938, guid: f301a1b0e1322c04a98ed2d18d94a3d5, type: 3}
+  m_PrefabInstance: {fileID: 1371192360}
+  m_PrefabAsset: {fileID: 0}
 --- !u!4 &291918075 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 4794568552811039434, guid: 6875ee2fa38405843a83a4981a7f5aaa, type: 3}
@@ -2069,7 +2074,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 4964932504019788680, guid: f00eac6c843dfd949b972f575b92d830, type: 3}
       propertyPath: m_Name
-      value: platform_green
+      value: StartMaze7
       objectReference: {fileID: 0}
     - target: {fileID: 4964932504019788681, guid: f00eac6c843dfd949b972f575b92d830, type: 3}
       propertyPath: m_LocalScale.x
@@ -2122,6 +2127,10 @@ PrefabInstance:
     - target: {fileID: 4964932504019788681, guid: f00eac6c843dfd949b972f575b92d830, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4964932504117025769, guid: f00eac6c843dfd949b972f575b92d830, type: 3}
+      propertyPath: m_Name
+      value: PlatformStartMaze7
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -2336,6 +2345,11 @@ PrefabInstance:
 Transform:
   m_CorrespondingSourceObject: {fileID: 4454668921102459321, guid: cdafd6d66f108e740a95731699638c87, type: 3}
   m_PrefabInstance: {fileID: 436364381}
+  m_PrefabAsset: {fileID: 0}
+--- !u!4 &440132253 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 8316115583188482392, guid: 7677de9ad9d871d4c8cf9c862afa2b60, type: 3}
+  m_PrefabInstance: {fileID: 1419802231}
   m_PrefabAsset: {fileID: 0}
 --- !u!1 &446171558 stripped
 GameObject:
@@ -2796,6 +2810,11 @@ PrefabInstance:
       insertIndex: -1
       addedObject: {fileID: 758372294}
   m_SourcePrefab: {fileID: 100100000, guid: dc79b305264a3c4419df1805306c54d8, type: 3}
+--- !u!4 &498111852 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 8525468410504630998, guid: daaf6de7ed47089488935667d2b5ab77, type: 3}
+  m_PrefabInstance: {fileID: 1664154646}
+  m_PrefabAsset: {fileID: 0}
 --- !u!4 &501828577 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 4000010806421500, guid: 1a73058088a4b204bb3a13aff5c48489, type: 3}
@@ -3868,9 +3887,13 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 2023839330}
     m_Modifications:
+    - target: {fileID: 3296217183173253246, guid: 5986a51f865abde4391cb5356f75b239, type: 3}
+      propertyPath: m_Name
+      value: PlatformStartMaze9
+      objectReference: {fileID: 0}
     - target: {fileID: 3296217183451859835, guid: 5986a51f865abde4391cb5356f75b239, type: 3}
       propertyPath: m_Name
-      value: platform_yellow
+      value: StartMaze9
       objectReference: {fileID: 0}
     - target: {fileID: 3296217183451859836, guid: 5986a51f865abde4391cb5356f75b239, type: 3}
       propertyPath: m_LocalScale.x
@@ -5491,7 +5514,17 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: cfbe25b6547e95546b04e0c3da3d80a2, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  targetObject: {fileID: 385901648}
+  teleportLocations:
+  - {fileID: 385901648}
+  - {fileID: 1535316229}
+  - {fileID: 288773134}
+  - {fileID: 440132253}
+  - {fileID: 2091715449}
+  - {fileID: 498111852}
+  - {fileID: 1901161702}
+  - {fileID: 1465524069}
+  - {fileID: 1499934932}
+  - {fileID: 1634969454}
 --- !u!1001 &960416905
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -7868,7 +7901,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 2229714017391643274, guid: f301a1b0e1322c04a98ed2d18d94a3d5, type: 3}
       propertyPath: m_Name
-      value: platform_orange
+      value: StartMaze3
       objectReference: {fileID: 0}
     - target: {fileID: 3075068430223958141, guid: f301a1b0e1322c04a98ed2d18d94a3d5, type: 3}
       propertyPath: m_LocalScale.x
@@ -7921,6 +7954,10 @@ PrefabInstance:
     - target: {fileID: 3075068430223958141, guid: f301a1b0e1322c04a98ed2d18d94a3d5, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8431659084500485510, guid: f301a1b0e1322c04a98ed2d18d94a3d5, type: 3}
+      propertyPath: m_Name
+      value: PlatformStartMaze3
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -8271,7 +8308,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 989505543394194460, guid: 7677de9ad9d871d4c8cf9c862afa2b60, type: 3}
       propertyPath: m_Name
-      value: platform_blue
+      value: StartMaze4
+      objectReference: {fileID: 0}
+    - target: {fileID: 8316115583188482393, guid: 7677de9ad9d871d4c8cf9c862afa2b60, type: 3}
+      propertyPath: m_Name
+      value: PlatformStartMaze4
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -8487,6 +8528,11 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 4454668921102459321, guid: cdafd6d66f108e740a95731699638c87, type: 3}
   m_PrefabInstance: {fileID: 1464602309}
   m_PrefabAsset: {fileID: 0}
+--- !u!4 &1465524069 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 4918862561244202938, guid: f301a1b0e1322c04a98ed2d18d94a3d5, type: 3}
+  m_PrefabInstance: {fileID: 1661605069}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &1473778722 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 1000011841440206, guid: 0ed203d298c050b49bfabe788790e1c2, type: 3}
@@ -8596,6 +8642,11 @@ PrefabInstance:
       insertIndex: -1
       addedObject: {fileID: 1265062732}
   m_SourcePrefab: {fileID: 100100000, guid: 5c02591794acece409986647ed6329a7, type: 3}
+--- !u!4 &1499934932 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 3296217183173253247, guid: 5986a51f865abde4391cb5356f75b239, type: 3}
+  m_PrefabInstance: {fileID: 749122541}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &1527732569 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 919132149155446097, guid: dc79b305264a3c4419df1805306c54d8, type: 3}
@@ -8718,6 +8769,11 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 6634772033659347431, guid: daaf6de7ed47089488935667d2b5ab77, type: 3}
   m_PrefabInstance: {fileID: 1528113917}
   m_PrefabAsset: {fileID: 0}
+--- !u!4 &1535316229 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 8525468410504630998, guid: daaf6de7ed47089488935667d2b5ab77, type: 3}
+  m_PrefabInstance: {fileID: 1705281894}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &1550300422
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -8726,9 +8782,13 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 1746308758}
     m_Modifications:
+    - target: {fileID: 3296217183173253246, guid: 5986a51f865abde4391cb5356f75b239, type: 3}
+      propertyPath: m_Name
+      value: PlatformStartMaze5
+      objectReference: {fileID: 0}
     - target: {fileID: 3296217183451859835, guid: 5986a51f865abde4391cb5356f75b239, type: 3}
       propertyPath: m_Name
-      value: platform_yellow
+      value: StartMaze5
       objectReference: {fileID: 0}
     - target: {fileID: 3296217183451859836, guid: 5986a51f865abde4391cb5356f75b239, type: 3}
       propertyPath: m_LocalScale.x
@@ -9276,6 +9336,11 @@ BoxCollider:
   serializedVersion: 3
   m_Size: {x: 8.719794, y: 4.808879, z: 1.1548485}
   m_Center: {x: 0.0001678467, y: 2.4038653, z: 0.0031115708}
+--- !u!4 &1634969454 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 8525468410504630998, guid: daaf6de7ed47089488935667d2b5ab77, type: 3}
+  m_PrefabInstance: {fileID: 2053699885}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &1640077223
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -9398,7 +9463,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 2229714017391643274, guid: f301a1b0e1322c04a98ed2d18d94a3d5, type: 3}
       propertyPath: m_Name
-      value: platform_orange
+      value: StartMaze8
       objectReference: {fileID: 0}
     - target: {fileID: 3075068430223958141, guid: f301a1b0e1322c04a98ed2d18d94a3d5, type: 3}
       propertyPath: m_LocalScale.x
@@ -9452,6 +9517,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 8431659084500485510, guid: f301a1b0e1322c04a98ed2d18d94a3d5, type: 3}
+      propertyPath: m_Name
+      value: PlatformStartMaze8
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -9470,6 +9539,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 2119508242}
     m_Modifications:
+    - target: {fileID: 117097023668840917, guid: daaf6de7ed47089488935667d2b5ab77, type: 3}
+      propertyPath: m_Name
+      value: PlatformStartMaze6
+      objectReference: {fileID: 0}
     - target: {fileID: 6634772033659347431, guid: daaf6de7ed47089488935667d2b5ab77, type: 3}
       propertyPath: m_LocalScale.x
       value: 2
@@ -9524,7 +9597,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8217439828489247365, guid: daaf6de7ed47089488935667d2b5ab77, type: 3}
       propertyPath: m_Name
-      value: platform_red
+      value: StartMaze6
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -9850,6 +9923,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 450756896}
     m_Modifications:
+    - target: {fileID: 117097023668840917, guid: daaf6de7ed47089488935667d2b5ab77, type: 3}
+      propertyPath: m_Name
+      value: PlatformStartMaze2
+      objectReference: {fileID: 0}
     - target: {fileID: 6634772033659347431, guid: daaf6de7ed47089488935667d2b5ab77, type: 3}
       propertyPath: m_LocalScale.x
       value: 2
@@ -9904,7 +9981,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8217439828489247365, guid: daaf6de7ed47089488935667d2b5ab77, type: 3}
       propertyPath: m_Name
-      value: platform_red
+      value: StartMaze2
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -10884,6 +10961,11 @@ BoxCollider:
   serializedVersion: 3
   m_Size: {x: 11.578472, y: 5.694662, z: 1.8625206}
   m_Center: {x: 0.005968095, y: 2.7100453, z: -0.00018125771}
+--- !u!4 &1901161702 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 4964932504117025782, guid: f00eac6c843dfd949b972f575b92d830, type: 3}
+  m_PrefabInstance: {fileID: 367429221}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &1907130426
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -12494,6 +12576,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 1038085667}
     m_Modifications:
+    - target: {fileID: 117097023668840917, guid: daaf6de7ed47089488935667d2b5ab77, type: 3}
+      propertyPath: m_Name
+      value: PlatformStartMaze10
+      objectReference: {fileID: 0}
     - target: {fileID: 6634772033659347431, guid: daaf6de7ed47089488935667d2b5ab77, type: 3}
       propertyPath: m_LocalScale.x
       value: 2
@@ -12548,7 +12634,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8217439828489247365, guid: daaf6de7ed47089488935667d2b5ab77, type: 3}
       propertyPath: m_Name
-      value: platform_red
+      value: StartMaze10
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -12682,6 +12768,11 @@ BoxCollider:
 Transform:
   m_CorrespondingSourceObject: {fileID: 400000, guid: 77ba18a9ff17f9048a9b4fe04dec0eb6, type: 3}
   m_PrefabInstance: {fileID: 909163175}
+  m_PrefabAsset: {fileID: 0}
+--- !u!4 &2091715449 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 3296217183173253247, guid: 5986a51f865abde4391cb5356f75b239, type: 3}
+  m_PrefabInstance: {fileID: 1550300422}
   m_PrefabAsset: {fileID: 0}
 --- !u!1 &2100708021
 GameObject:

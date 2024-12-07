@@ -4,8 +4,8 @@ using UnityEngine;
 
 public class PortalTeleport : MonoBehaviour
 {
-    // Referensi ke objek target
-    public Transform targetObject;
+    // Array untuk menyimpan lokasi teleport
+    public Transform[] teleportLocations;
 
     // Event trigger ketika karakter memasuki portal
     private void OnTriggerEnter(Collider other)
@@ -13,11 +13,15 @@ public class PortalTeleport : MonoBehaviour
         // Pastikan objek yang masuk adalah karakter (misalnya, tag "Player")
         if (other.CompareTag("Player"))
         {
-            // Teleport karakter ke posisi target
-            other.transform.position = targetObject.position;
+            // Pilih lokasi acak dari array
+            int randomIndex = Random.Range(0, teleportLocations.Length);
+            Transform randomTarget = teleportLocations[randomIndex];
+
+            // Teleport karakter ke posisi target acak
+            other.transform.position = randomTarget.position;
 
             // Opsional: tambahkan efek visual/suara di sini
-            Debug.Log("Karakter telah dipindahkan ke target.");
+            Debug.Log("Karakter telah dipindahkan ke target acak: " + randomTarget.name);
         }
     }
 }
