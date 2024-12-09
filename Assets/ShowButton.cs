@@ -4,73 +4,29 @@ using UnityEngine;
 
 public class ShowButtonWithTeleport : MonoBehaviour
 {
-    [Header("UI Settings")]
-    public GameObject uiObject; // UI untuk tombol
-
-    [Header("Teleport Settings")]
-    public Transform teleportTarget; // Objek target teleport
-
-    private bool canTeleport = false; // Flag apakah player berada di trigger
+    public GameObject uiObject; // Objek UI
+    private bool isUIActive = false; // Cek apakah UI sedang aktif
 
     void Start()
     {
-        if (uiObject != null)
-        {
-            uiObject.SetActive(false); // Sembunyikan UI saat start
-        }
-        else
-        {
-            Debug.LogWarning("UI Object belum diset di Inspector.");
-        }
+        uiObject.SetActive(false); // Sembunyikan UI saat start
     }
 
     void OnTriggerEnter(Collider player)
     {
-        if (player.gameObject.CompareTag("Player"))
+        if (player.gameObject.tag == "Player" && !isUIActive)
         {
-            if (uiObject != null)
-            {
-                uiObject.SetActive(true); // Tampilkan UI
-            }
-            canTeleport = true; // Izinkan teleport
+            uiObject.SetActive(true); // Tampilkan UI
+            isUIActive = true; // Tandai UI aktif
         }
     }
 
-    void OnTriggerExit(Collider player)
+    public void DestroyUI()
     {
-        if (player.gameObject.CompareTag("Player"))
+        if (uiObject != null)
         {
-            if (uiObject != null)
-            {
-                uiObject.SetActive(false); // Sembunyikan UI saat keluar trigger
-            }
-            canTeleport = false; // Larang teleport
-        }
-    }
-
-    public void TeleportPlayer()
-    {
-        if (canTeleport)
-        {
-            GameObject player = GameObject.FindGameObjectWithTag("Player");
-            if (player != null && teleportTarget != null)
-            {
-                player.transform.position = teleportTarget.position; // Teleport ke target
-                Debug.Log("Player telah dipindahkan ke target teleport.");
-
-                // Sembunyikan UI setelah teleport
-                if (uiObject != null)
-                {
-                    Destroy(uiObject);
-                }
-
-                // Hancurkan objek setelah teleport selesai
-                Destroy(gameObject);
-            }
-            else
-            {
-                Debug.LogWarning("Teleport gagal: Player atau teleportTarget tidak ditemukan.");
-            }
+            Destroy(uiObject); // Hancurkan UI
+            isUIActive = false; // Reset status
         }
     }
 }

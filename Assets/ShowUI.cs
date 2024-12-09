@@ -4,25 +4,29 @@ using UnityEngine;
 
 public class ShowUI : MonoBehaviour
 {
-    public GameObject uiObject;
+    public GameObject uiObject; // Objek UI
+    private bool isUIActive = false; // Cek apakah UI sedang aktif
+
     void Start()
     {
-        uiObject.SetActive(false);
+        uiObject.SetActive(false); // Sembunyikan UI saat start
     }
 
-    void OnTriggerEnter (Collider player)
+    void OnTriggerEnter(Collider player)
     {
-        if(player.gameObject.tag == "Player")
+        if (player.gameObject.tag == "Player" && !isUIActive)
         {
-            uiObject.SetActive(true);
-            StartCoroutine("WaitForSec");
+            uiObject.SetActive(true); // Tampilkan UI
+            isUIActive = true; // Tandai UI aktif
         }
     }
-    IEnumerator WaitForSec()
-    {
-        yield return new WaitForSeconds(5);
-        Destroy(uiObject);
-        Destroy(gameObject);
-    }
 
+    public void DestroyUI()
+    {
+        if (uiObject != null)
+        {
+            Destroy(uiObject); // Hancurkan UI
+            isUIActive = false; // Reset status
+        }
+    }
 }

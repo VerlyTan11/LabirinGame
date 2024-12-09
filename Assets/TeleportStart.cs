@@ -4,20 +4,19 @@ using UnityEngine;
 
 public class TeleportStart : MonoBehaviour
 {
-    // Referensi ke objek target
-    public Transform targetObject;
+    public GameObject Player; // Objek Player
+    public Transform target;  // Transform dari target teleportasi
 
-    // Event trigger ketika karakter memasuki portal
-    private void OnTriggerEnter(Collider other)
+    // Method untuk teleportasi
+    public void TeleportPlayer()
     {
-        // Pastikan objek yang masuk adalah karakter (misalnya, tag "Player")
-        if (other.CompareTag("Player"))
+        if (Player != null && target != null)
         {
-            // Teleport karakter ke posisi target
-            other.transform.position = targetObject.position;
-
-            // Opsional: tambahkan efek visual/suara di sini
-            Debug.Log("Karakter telah dipindahkan ke target Paradise");
+            Player.transform.position = target.position; // Pindahkan Player ke posisi target
+        }
+        else
+        {
+            Debug.LogWarning("Player atau Target belum diatur!");
         }
     }
 }

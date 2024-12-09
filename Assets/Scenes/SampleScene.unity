@@ -4202,7 +4202,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   uiObject: {fileID: 2033553069}
-  teleportTarget: {fileID: 1600784017}
 --- !u!4 &655492089 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: -8679921383154817045, guid: dc79b305264a3c4419df1805306c54d8, type: 3}
@@ -8572,6 +8571,8 @@ GameObject:
   - component: {fileID: 1345393330}
   - component: {fileID: 1345393329}
   - component: {fileID: 1345393328}
+  - component: {fileID: 1345393331}
+  - component: {fileID: 1345393332}
   m_Layer: 0
   m_Name: Canvas
   m_TagString: Untagged
@@ -8663,6 +8664,33 @@ Canvas:
   m_SortingLayerID: 0
   m_SortingOrder: 0
   m_TargetDisplay: 0
+--- !u!114 &1345393331
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1345393326}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1287bd605d2692b49a7a82a88ac7c6d8, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Player: {fileID: 193243429}
+  target: {fileID: 1600784017}
+--- !u!114 &1345393332
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1345393326}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ac310900f0ef5964ebe65ba723a2d941, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  uiObject: {fileID: 1345393326}
 --- !u!1 &1346421940 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 100002, guid: cd5bfe793a85f1e40ac7d66c245660d5, type: 3}
@@ -13718,7 +13746,31 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 2033553072}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 1345393331}
+        m_TargetAssemblyTypeName: TeleportStart, Assembly-CSharp
+        m_MethodName: TeleportPlayer
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 1345393332}
+        m_TargetAssemblyTypeName: ShowButtonWithTeleport, Assembly-CSharp
+        m_MethodName: DestroyUI
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &2033553072
 MonoBehaviour:
   m_ObjectHideFlags: 0
