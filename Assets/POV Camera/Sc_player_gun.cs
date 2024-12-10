@@ -7,18 +7,18 @@ public class Sc_player_gun : MonoBehaviour
     [SerializeField] GameObject objBulletHole;
     private int senjataAktif = 0;
     private Animator anim;
-    public AudioSource audioSource;
-    public AudioClip shotSound;
-    public AudioClip shootingSound;
-    public AudioClip walkSound;
-    public AudioClip reloadSound;
+    // public AudioSource audioSource;
+    // public AudioClip shotSound;
+    // public AudioClip shootingSound;
+    // public AudioClip walkSound;
+    // public AudioClip reloadSound;
     private bool isJalan = false;
 
     void Start()
     {
         gantiSenjata(0);
         anim = GetComponent<Animator>();
-        audioSource = GetComponent<AudioSource>();
+        // audioSource = GetComponent<AudioSource>();
     }
 
     void Update()
@@ -40,10 +40,10 @@ public class Sc_player_gun : MonoBehaviour
             tampil_raycast();
 
             // Play sound when shooting
-            if (audioSource != null && shotSound != null)
-            {
-                audioSource.PlayOneShot(shotSound);
-            }
+            // if (audioSource != null && shotSound != null)
+            // {
+            //     audioSource.PlayOneShot(shotSound);
+            // }
         }
 
         // Reload
@@ -53,8 +53,6 @@ public class Sc_player_gun : MonoBehaviour
         }
 
         CheckWalkingSound();
-
-        
     }
 
     private void gantiSenjata(int noSenjata)
@@ -68,20 +66,19 @@ public class Sc_player_gun : MonoBehaviour
         playerWeapon.name = "senjata_aktif";
         senjataAktif = noSenjata;
 
-         if ( reloadSound != null && audioSource != null)
-        {
-            audioSource.PlayOneShot(reloadSound);
-        }
-
+        // if (reloadSound != null && audioSource != null)
+        // {
+        //     audioSource.PlayOneShot(reloadSound);
+        // }
     }
 
     private void StartReload()
     {
         // Play reload sound
-        if ( reloadSound != null && audioSource != null)
-        {
-            audioSource.PlayOneShot(reloadSound);
-        }
+        // if (reloadSound != null && audioSource != null)
+        // {
+        //     audioSource.PlayOneShot(reloadSound);
+        // }
         
         // Trigger reload animation
         anim.SetBool("reloading", true);
@@ -109,54 +106,53 @@ public class Sc_player_gun : MonoBehaviour
         objFlash.transform.parent = GameObject.Find("tempat_flash").transform;
         Destroy(objFlash, 0.1f);
 
-        if (shootingSound != null && audioSource != null)
-        {
-            audioSource.PlayOneShot(shootingSound);
-        }
+        // if (shootingSound != null && audioSource != null)
+        // {
+        //     audioSource.PlayOneShot(shootingSound);
+        // }
     }
 
     void tampil_raycast()
-{
-    Ray ray = Camera.main.ViewportPointToRay(new Vector3(0.5f, 0.5f, 0));
-    RaycastHit hit;
-
-    if (Physics.Raycast(ray, out hit))
     {
-        // Jika mengenai objek dengan tag "Enemy"
-        if (hit.transform.CompareTag("Enemy"))
-        {
-            // Buat clone bullet hole di posisi tabrakan dengan rotasi yang sesuai
-            GameObject bulletHole = Instantiate(objBulletHole, hit.point, Quaternion.LookRotation(hit.normal));
-            
-            // Set bullet hole sebagai anak dari objek Enemy agar menempel di permukaannya
-            bulletHole.transform.SetParent(hit.transform, true);
+        Ray ray = Camera.main.ViewportPointToRay(new Vector3(0.5f, 0.5f, 0));
+        RaycastHit hit;
 
-            // Menambahkan efek dorongan pada objek Enemy jika ada Rigidbody
-            Rigidbody rb = hit.transform.GetComponent<Rigidbody>();
-            if (rb != null)
+        if (Physics.Raycast(ray, out hit))
+        {
+            // Jika mengenai objek dengan tag "Enemy"
+            if (hit.transform.CompareTag("Enemy"))
             {
-                rb.AddForce(-hit.normal * 500); // Sesuaikan daya dorong sesuai kebutuhan
+                // Buat clone bullet hole di posisi tabrakan dengan rotasi yang sesuai
+                GameObject bulletHole = Instantiate(objBulletHole, hit.point, Quaternion.LookRotation(hit.normal));
+                
+                // Set bullet hole sebagai anak dari objek Enemy agar menempel di permukaannya
+                bulletHole.transform.SetParent(hit.transform, true);
+
+                // Menambahkan efek dorongan pada objek Enemy jika ada Rigidbody
+                Rigidbody rb = hit.transform.GetComponent<Rigidbody>();
+                if (rb != null)
+                {
+                    rb.AddForce(-hit.normal * 500); // Sesuaikan daya dorong sesuai kebutuhan
+                }
             }
         }
+        else
+        {
+            Debug.Log("Tidak ada objek yang terkena.");
+        }
     }
-    else
-    {
-        Debug.Log("Tidak ada objek yang terkena.");
-    }
-}
-
 
     private void CheckWalkingSound()
     {
-        if (isJalan && !audioSource.isPlaying)
-        {
-            audioSource.clip = walkSound;
-            audioSource.loop = true;
-            audioSource.Play();
-        }
-        else if (!isJalan && audioSource.isPlaying && audioSource.clip == walkSound)
-        {
-            audioSource.Stop();
-        }
+        // if (isJalan && !audioSource.isPlaying)
+        // {
+        //     audioSource.clip = walkSound;
+        //     audioSource.loop = true;
+        //     audioSource.Play();
+        // }
+        // else if (!isJalan && audioSource.isPlaying && audioSource.clip == walkSound)
+        // {
+        //     audioSource.Stop();
+        // }
     }
 }

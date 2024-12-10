@@ -173,7 +173,7 @@ public class Sc_player : MonoBehaviour {
     private void OnCollisionEnter(Collision collision) {
         // Reset status lompat saat pemain menyentuh tanah
         if (collision.gameObject.CompareTag("Ground")) {
-            isJumping = false;
+            isJumping = false; // Memungkinkan lompat lagi setelah menyentuh tanah
         }
     }
 
