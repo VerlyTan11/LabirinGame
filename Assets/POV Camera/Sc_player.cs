@@ -116,16 +116,15 @@ using UnityEngine;
 // }
 
 public class Sc_player : MonoBehaviour {
-    public float minimumY = -60f;
+    public float minimumY = -60f; // kamera
     public float maximumY = 60f;
     private float speedPutar = 5f;
-    private float normalSpeed = 60f; // Kecepatan normal tetap
-    private float runSpeed = 0f; // Menghilangkan kecepatan lari
+    private float normalSpeed = 20f; // Kecepatan normal tetap
     float rotationX = 0f;
     float rotationY = 0f;
     private Animator anim;
     private bool isJumping = false; // Variabel untuk melacak status lompat
-    public float jumpHeight = 25f; // Mengubah tinggi lompatan menjadi 25
+    public float jumpHeight = 0.1f; // Tinggi lompatan
 
     private Rigidbody rb;
 
@@ -133,6 +132,7 @@ public class Sc_player : MonoBehaviour {
         anim = GetComponent<Animator>();
         rb = GetComponent<Rigidbody>(); // Mendapatkan komponen Rigidbody
         rb.freezeRotation = true; // Membekukan rotasi pada Rigidbody agar tidak terpengaruh fisika
+        rb.useGravity = true; // Memastikan gravitasi aktif
     }
 
     void Update () {
@@ -153,8 +153,7 @@ public class Sc_player : MonoBehaviour {
         // Gerakkan maju mundur Player
         float h = Input.GetAxis("Horizontal");
         float v = Input.GetAxis("Vertical");
-        float currentSpeed = normalSpeed; // Hanya menggunakan kecepatan normal
-        Vector3 movement = new Vector3(h, 0, v) * Time.deltaTime * currentSpeed;
+        Vector3 movement = new Vector3(h, 0, v) * Time.deltaTime * normalSpeed;
         rb.MovePosition(transform.position + transform.TransformDirection(movement));
 
         // Aktifkan animasi jalan jika ada pergerakan
@@ -165,22 +164,15 @@ public class Sc_player : MonoBehaviour {
 
         // Lompat
         if (Input.GetKeyDown(KeyCode.Space) && !isJumping) {
-            rb.velocity = new Vector3(rb.velocity.x, jumpHeight, rb.velocity.z); // Lompat dengan kecepatan vertikal
-            isJumping = true; // Set status lompat menjadi true
+            rb.velocity = new Vector3(rb.velocity.x, jumpHeight, rb.velocity.z);
+            isJumping = true;
         }
     }
 
     private void OnCollisionEnter(Collision collision) {
         // Reset status lompat saat pemain menyentuh tanah
         if (collision.gameObject.CompareTag("Ground")) {
-            isJumping = false; // Memungkinkan lompat lagi setelah menyentuh tanah
-        }
-    }
-
-    void FixedUpdate() {
-        // Jika pemain tidak melompat dan kecepatannya vertikal sangat kecil, biarkan pemain jatuh
-        if (!isJumping && Mathf.Abs(rb.velocity.y) < 0.1f) {
-            rb.velocity = new Vector3(rb.velocity.x, -10f, rb.velocity.z); // Jatuh dengan kecepatan vertikal negatif
+            isJumping = false;
         }
     }
 }
