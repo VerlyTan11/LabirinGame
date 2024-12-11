@@ -119,7 +119,7 @@ public class Sc_player : MonoBehaviour {
     public float minimumY = -60f; // kamera
     public float maximumY = 60f;
     private float speedPutar = 5f;
-    private float normalSpeed = 20f; // Kecepatan normal tetap
+    private float normalSpeed = 50f; // Kecepatan normal tetap
     float rotationX = 0f;
     float rotationY = 0f;
     private Animator anim;
