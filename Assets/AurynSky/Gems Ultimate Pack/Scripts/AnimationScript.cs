@@ -1,8 +1,7 @@
 ﻿using UnityEngine;
-using System.Collections;
 
-public class AnimationScript : MonoBehaviour {
-
+public class AnimationScript : MonoBehaviour
+{
     public bool isAnimated = false;
 
     public bool isRotating = false;
@@ -12,11 +11,9 @@ public class AnimationScript : MonoBehaviour {
     public Vector3 rotationAngle;
     public float rotationSpeed;
 
-    public float floatSpeed;
-    private bool goingUp = true;
-    public float floatRate;
-    private float floatTimer;
-   
+    public float floatSpeed = 1.0f; // Kecepatan naik turun
+    public float floatAmplitude = 0.5f; // Amplitudo naik turun
+
     public Vector3 startScale;
     public Vector3 endScale;
 
@@ -25,45 +22,29 @@ public class AnimationScript : MonoBehaviour {
     public float scaleRate;
     private float scaleTimer;
 
-	// Use this for initialization
-	void Start () {
-	
-	}
-	
-	// Update is called once per frame
-	void Update () {
+    private Vector3 startPos;
 
-       
-        
-        if(isAnimated)
+    void Start()
+    {
+        startPos = transform.position; // Simpan posisi awal
+    }
+
+    void Update()
+    {
+        if (isAnimated)
         {
-            if(isRotating)
+            if (isRotating)
             {
                 transform.Rotate(rotationAngle * rotationSpeed * Time.deltaTime);
             }
 
-            if(isFloating)
+            if (isFloating)
             {
-                floatTimer += Time.deltaTime;
-                Vector3 moveDir = new Vector3(0.0f, 0.0f, floatSpeed);
-                transform.Translate(moveDir);
-
-                if (goingUp && floatTimer >= floatRate)
-                {
-                    goingUp = false;
-                    floatTimer = 0;
-                    floatSpeed = -floatSpeed;
-                }
-
-                else if(!goingUp && floatTimer >= floatRate)
-                {
-                    goingUp = true;
-                    floatTimer = 0;
-                    floatSpeed = +floatSpeed;
-                }
+                float newY = startPos.y + Mathf.Sin(Time.time * floatSpeed) * floatAmplitude;
+                transform.position = new Vector3(startPos.x, newY, startPos.z);
             }
 
-            if(isScaling)
+            if (isScaling)
             {
                 scaleTimer += Time.deltaTime;
 
@@ -71,18 +52,17 @@ public class AnimationScript : MonoBehaviour {
                 {
                     transform.localScale = Vector3.Lerp(transform.localScale, endScale, scaleSpeed * Time.deltaTime);
                 }
-                else if (!scalingUp)
+                else
                 {
                     transform.localScale = Vector3.Lerp(transform.localScale, startScale, scaleSpeed * Time.deltaTime);
                 }
 
-                if(scaleTimer >= scaleRate)
+                if (scaleTimer >= scaleRate)
                 {
-                    if (scalingUp) { scalingUp = false; }
-                    else if (!scalingUp) { scalingUp = true; }
+                    scalingUp = !scalingUp;
                     scaleTimer = 0;
                 }
             }
         }
-	}
+    }
 }

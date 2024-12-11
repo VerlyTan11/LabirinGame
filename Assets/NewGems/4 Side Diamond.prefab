@@ -11,9 +11,9 @@ GameObject:
   - component: {fileID: 8288173554871659671}
   - component: {fileID: 8871640222030880934}
   - component: {fileID: 8530405478832423193}
-  - component: {fileID: 5431944749706043362}
   - component: {fileID: 4284792873518758036}
   - component: {fileID: 8118385726404998390}
+  - component: {fileID: -7284468372580049697}
   m_Layer: 0
   m_Name: 4 Side Diamond
   m_TagString: Gem
@@ -86,30 +86,6 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
---- !u!114 &5431944749706043362
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 869542697494669811}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 9ff967b7ed48f2441bcf509edf6b889a, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  isAnimated: 1
-  isRotating: 1
-  isFloating: 1
-  isScaling: 1
-  rotationAngle: {x: 0, y: 0, z: 10}
-  rotationSpeed: 10
-  floatSpeed: 0.01
-  floatRate: 0.5
-  startScale: {x: 1, y: 1, z: 1}
-  endScale: {x: 1.5, y: 1.5, z: 1.5}
-  scaleSpeed: 1
-  scaleRate: 0.5
 --- !u!114 &4284792873518758036
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -143,3 +119,17 @@ BoxCollider:
   serializedVersion: 3
   m_Size: {x: 2.0000007, y: 2.0000012, z: 2.4652214}
   m_Center: {x: 0, y: -0.000091314316, z: -0.31269148}
+--- !u!114 &-7284468372580049697
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 869542697494669811}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 100cc7138319c0440a1b4413441bedb2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  floatSpeed: 2
+  floatAmplitude: 0.5
