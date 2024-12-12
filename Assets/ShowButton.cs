@@ -2,7 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class ShowButtonWithTeleport : MonoBehaviour
+public class ShowButton : MonoBehaviour
 {
     public GameObject uiObject; // Objek UI
     private bool isUIActive = false; // Cek apakah UI sedang aktif

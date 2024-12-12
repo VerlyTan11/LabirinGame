@@ -25,17 +25,18 @@ public class ShowUI : MonoBehaviour
     {
         if (player.gameObject.tag == "Player" && isUIActive)
         {
-            uiObject.SetActive(false); // Sembunyikan UI
+            uiObject.SetActive(false); // Sembunyikan UI saat keluar dari trigger
             isUIActive = false; // Reset status UI
         }
     }
 
-    public void DestroyUI()
+    // Fungsi untuk menyembunyikan UI secara manual
+    public void HideUI()
     {
-        if (uiObject != null)
+        if (isUIActive)
         {
-            Destroy(uiObject); // Hancurkan UI
-            isUIActive = false; // Reset status
+            uiObject.SetActive(false); // Sembunyikan UI
+            isUIActive = false; // Reset status UI
         }
     }
 }

@@ -10,11 +10,6 @@ public class TransformStart : MonoBehaviour
 
     public Vector3 targetPosition = new Vector3(92.1f, 21.5f, 220.5f); // Posisi target
 
-    void Start()
-    {
-        uiObject.SetActive(false); // Sembunyikan UI saat start
-    }
-
     void OnTriggerEnter(Collider player)
     {
         if (player.gameObject.tag == "Player" && !isUIActive)

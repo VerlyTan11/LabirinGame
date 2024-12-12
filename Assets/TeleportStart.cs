@@ -12,7 +12,7 @@ public class TeleportStart : MonoBehaviour
     {
         if (Player != null && target != null)
         {
-            Player.transform.position = target.position; // Pindahkan Player ke posisi target
+            Player.transform.position = target.position;
         }
         else
         {
