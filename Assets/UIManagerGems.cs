@@ -1,4 +1,5 @@
 using UnityEngine;
+using UnityEngine.UI;
 using System.Collections.Generic;
 
 public class UIManager : MonoBehaviour
@@ -9,10 +10,11 @@ public class UIManager : MonoBehaviour
     public class GemDisplay
     {
         public string gemType; // Jenis gems
-        public GameObject gemIcon; // Prefab gems sebagai ikon
+        public Image gemImage; // Komponen Image di UI
+        public Sprite foundSprite; // Sprite untuk gems yang sudah ditemukan
     }
 
-    public List<GemDisplay> gemDisplays;
+    public List<GemDisplay> gemDisplays; // List untuk semua gems di UI
 
     private void Awake()
     {
@@ -32,12 +34,9 @@ public class UIManager : MonoBehaviour
         {
             if (display.gemType == gemType)
             {
-                Renderer renderer = display.gemIcon.GetComponent<Renderer>();
-                if (renderer != null)
-                {
-                    renderer.material.color = Color.white; // Ubah warna menjadi putih
-                    Debug.Log($"Gem {gemType} collected!");
-                }
+                // Ubah gambar menjadi sprite berwarna
+                display.gemImage.sprite = display.foundSprite;
+                Debug.Log($"Gem {gemType} collected and updated in UI!");
                 return;
             }
         }

@@ -133,3 +133,4 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   floatSpeed: 2
   floatAmplitude: 0.5
+  gemType: Heart

@@ -27,4 +27,18 @@ public class FloatingGem : MonoBehaviour
             Destroy(gameObject); // Hancurkan gems
         }
     }
+
+    // Tambahan baru untuk efek atau logika setelah gems dihancurkan
+    private void OnDestroy()
+    {
+        // Contoh efek partikel atau suara ketika gems dihancurkan
+        GameObject effect = Resources.Load<GameObject>("GemDestroyEffect"); // Pastikan prefab efek ada di folder Resources
+        if (effect != null)
+        {
+            Instantiate(effect, transform.position, Quaternion.identity);
+        }
+
+        // Tambahkan logika lain jika diperlukan, seperti mencatat skor atau efek tambahan
+        Debug.Log($"Gem {gemType} has been collected and destroyed.");
+    }
 }
