@@ -7,6 +7,7 @@ TagManager:
   - CinemachineTarget
   - Ground
   - Gem
+  - Start
   layers:
   - Default
   - TransparentFX
