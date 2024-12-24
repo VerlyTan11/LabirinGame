@@ -8,6 +8,8 @@ TagManager:
   - Ground
   - Gem
   - Start
+  - Monster
+  - Weapon
   layers:
   - Default
   - TransparentFX
