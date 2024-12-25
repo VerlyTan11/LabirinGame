@@ -507,11 +507,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: dfe266c9ae6cf3c44878cb61bacb574d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  detectionRadius: 50
-  attackRadius: 20
-  walkSpeed: 2
+  detectionRadius: 20
+  attackRadius: 10
+  walkSpeed: 10
   runSpeed: 4
   attackDamage: 10
+  raycastDistance: 1
 --- !u!4 &46155531 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: -8679921383154817045, guid: 65c47ba8ff62ca0499873b889f10183e, type: 3}
@@ -1112,11 +1113,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: dfe266c9ae6cf3c44878cb61bacb574d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  detectionRadius: 50
-  attackRadius: 20
-  walkSpeed: 2
+  detectionRadius: 20
+  attackRadius: 10
+  walkSpeed: 10
   runSpeed: 4
   attackDamage: 10
+  raycastDistance: 1
 --- !u!4 &91694797 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: -8679921383154817045, guid: 65c47ba8ff62ca0499873b889f10183e, type: 3}
@@ -1267,7 +1269,7 @@ MonoBehaviour:
   excludeZones:
   - {fileID: 853561988}
   - {fileID: 1371192361}
-  numMonstersToSpawn: 50
+  numMonstersToSpawn: 70
   hoverHeight: 0
 --- !u!1 &100418173 stripped
 GameObject:
@@ -2876,11 +2878,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: dfe266c9ae6cf3c44878cb61bacb574d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  detectionRadius: 50
-  attackRadius: 20
-  walkSpeed: 2
+  detectionRadius: 20
+  attackRadius: 10
+  walkSpeed: 10
   runSpeed: 5
   attackDamage: 10
+  raycastDistance: 1
 --- !u!4 &244244793 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: -8679921383154817045, guid: 65c47ba8ff62ca0499873b889f10183e, type: 3}
@@ -3644,7 +3647,7 @@ MonoBehaviour:
   excludeZones:
   - {fileID: 1427766693}
   - {fileID: 1996330452}
-  numMonstersToSpawn: 50
+  numMonstersToSpawn: 70
   hoverHeight: 0
 --- !u!4 &288773134 stripped
 Transform:
@@ -5814,7 +5817,7 @@ MonoBehaviour:
   excludeZones:
   - {fileID: 1914846276}
   - {fileID: 1705281895}
-  numMonstersToSpawn: 50
+  numMonstersToSpawn: 70
   hoverHeight: 0
 --- !u!4 &451441232 stripped
 Transform:
@@ -7261,11 +7264,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: dfe266c9ae6cf3c44878cb61bacb574d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  detectionRadius: 50
-  attackRadius: 20
-  walkSpeed: 2
+  detectionRadius: 20
+  attackRadius: 10
+  walkSpeed: 10
   runSpeed: 4
   attackDamage: 10
+  raycastDistance: 1
 --- !u!4 &580716373 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: -8679921383154817045, guid: 65c47ba8ff62ca0499873b889f10183e, type: 3}
@@ -7724,11 +7728,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: dfe266c9ae6cf3c44878cb61bacb574d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  detectionRadius: 50
-  attackRadius: 20
-  walkSpeed: 2
+  detectionRadius: 20
+  attackRadius: 10
+  walkSpeed: 10
   runSpeed: 4
   attackDamage: 10
+  raycastDistance: 1
 --- !u!4 &598256696 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: -8679921383154817045, guid: 65c47ba8ff62ca0499873b889f10183e, type: 3}
@@ -8767,11 +8772,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: dfe266c9ae6cf3c44878cb61bacb574d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  detectionRadius: 50
-  attackRadius: 20
-  walkSpeed: 2
+  detectionRadius: 20
+  attackRadius: 10
+  walkSpeed: 10
   runSpeed: 4
   attackDamage: 10
+  raycastDistance: 1
 --- !u!4 &690745633 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: -8679921383154817045, guid: 65c47ba8ff62ca0499873b889f10183e, type: 3}
@@ -9637,11 +9643,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: dfe266c9ae6cf3c44878cb61bacb574d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  detectionRadius: 50
-  attackRadius: 20
-  walkSpeed: 2
+  detectionRadius: 20
+  attackRadius: 10
+  walkSpeed: 10
   runSpeed: 4
   attackDamage: 10
+  raycastDistance: 1
 --- !u!4 &763181371 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: -8679921383154817045, guid: 65c47ba8ff62ca0499873b889f10183e, type: 3}
@@ -11763,7 +11770,7 @@ MonoBehaviour:
   excludeZones:
   - {fileID: 297440966}
   - {fileID: 1661605070}
-  numMonstersToSpawn: 50
+  numMonstersToSpawn: 70
   hoverHeight: 0
 --- !u!4 &946632529 stripped
 Transform:
@@ -12313,11 +12320,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: dfe266c9ae6cf3c44878cb61bacb574d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  detectionRadius: 50
-  attackRadius: 20
-  walkSpeed: 2
+  detectionRadius: 20
+  attackRadius: 10
+  walkSpeed: 10
   runSpeed: 4
   attackDamage: 10
+  raycastDistance: 1
 --- !u!4 &973586843 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: -8679921383154817045, guid: 65c47ba8ff62ca0499873b889f10183e, type: 3}
@@ -12411,11 +12419,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: dfe266c9ae6cf3c44878cb61bacb574d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  detectionRadius: 50
-  attackRadius: 20
-  walkSpeed: 2
+  detectionRadius: 20
+  attackRadius: 10
+  walkSpeed: 10
   runSpeed: 4
   attackDamage: 10
+  raycastDistance: 1
 --- !u!4 &985031835 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: -8679921383154817045, guid: 65c47ba8ff62ca0499873b889f10183e, type: 3}
@@ -14120,11 +14129,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: dfe266c9ae6cf3c44878cb61bacb574d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  detectionRadius: 50
-  attackRadius: 20
-  walkSpeed: 2
+  detectionRadius: 20
+  attackRadius: 10
+  walkSpeed: 10
   runSpeed: 4
   attackDamage: 10
+  raycastDistance: 1
 --- !u!4 &1102184999 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: -8679921383154817045, guid: 65c47ba8ff62ca0499873b889f10183e, type: 3}
@@ -14721,11 +14731,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: dfe266c9ae6cf3c44878cb61bacb574d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  detectionRadius: 50
-  attackRadius: 20
-  walkSpeed: 2
+  detectionRadius: 20
+  attackRadius: 10
+  walkSpeed: 10
   runSpeed: 4
   attackDamage: 10
+  raycastDistance: 1
 --- !u!4 &1243903761 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: -8679921383154817045, guid: 65c47ba8ff62ca0499873b889f10183e, type: 3}
@@ -15168,11 +15179,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: dfe266c9ae6cf3c44878cb61bacb574d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  detectionRadius: 50
-  attackRadius: 20
-  walkSpeed: 2
+  detectionRadius: 20
+  attackRadius: 10
+  walkSpeed: 10
   runSpeed: 4
   attackDamage: 10
+  raycastDistance: 1
 --- !u!4 &1276656181 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: -8679921383154817045, guid: 65c47ba8ff62ca0499873b889f10183e, type: 3}
@@ -18576,11 +18588,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: dfe266c9ae6cf3c44878cb61bacb574d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  detectionRadius: 50
-  attackRadius: 20
-  walkSpeed: 2
+  detectionRadius: 20
+  attackRadius: 10
+  walkSpeed: 10
   runSpeed: 4
   attackDamage: 10
+  raycastDistance: 1
 --- !u!4 &1471226100 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: -8679921383154817045, guid: 65c47ba8ff62ca0499873b889f10183e, type: 3}
@@ -18915,11 +18928,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: dfe266c9ae6cf3c44878cb61bacb574d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  detectionRadius: 50
-  attackRadius: 20
-  walkSpeed: 2
+  detectionRadius: 20
+  attackRadius: 10
+  walkSpeed: 10
   runSpeed: 4
   attackDamage: 10
+  raycastDistance: 1
 --- !u!4 &1495866179 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: -8679921383154817045, guid: 65c47ba8ff62ca0499873b889f10183e, type: 3}
@@ -19018,11 +19032,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: dfe266c9ae6cf3c44878cb61bacb574d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  detectionRadius: 50
-  attackRadius: 20
-  walkSpeed: 2
+  detectionRadius: 20
+  attackRadius: 10
+  walkSpeed: 10
   runSpeed: 4
   attackDamage: 10
+  raycastDistance: 1
 --- !u!4 &1505802918 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: -8679921383154817045, guid: 65c47ba8ff62ca0499873b889f10183e, type: 3}
@@ -19576,6 +19591,10 @@ PrefabInstance:
       value: -0
       objectReference: {fileID: 0}
     - target: {fileID: 1410627918771229317, guid: 3bcbaa28c758c934a95b9d3d86f20c29, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 1.147
+      objectReference: {fileID: 0}
+    - target: {fileID: 1410627918771229317, guid: 3bcbaa28c758c934a95b9d3d86f20c29, type: 3}
       propertyPath: m_LocalPosition.z
       value: 0.16
       objectReference: {fileID: 0}
@@ -19609,19 +19628,19 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7215642422080135723, guid: 3bcbaa28c758c934a95b9d3d86f20c29, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 441
+      value: 386.9117
       objectReference: {fileID: 0}
     - target: {fileID: 7215642422080135723, guid: 3bcbaa28c758c934a95b9d3d86f20c29, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 100.6
+      value: 15.9
       objectReference: {fileID: 0}
     - target: {fileID: 7215642422080135723, guid: 3bcbaa28c758c934a95b9d3d86f20c29, type: 3}
       propertyPath: m_LocalPosition.z
-      value: 452
+      value: 452.87976
       objectReference: {fileID: 0}
     - target: {fileID: 7215642422080135723, guid: 3bcbaa28c758c934a95b9d3d86f20c29, type: 3}
       propertyPath: m_LocalRotation.w
-      value: 0.75030994
+      value: 0.114464216
       objectReference: {fileID: 0}
     - target: {fileID: 7215642422080135723, guid: 3bcbaa28c758c934a95b9d3d86f20c29, type: 3}
       propertyPath: m_LocalRotation.x
@@ -19629,7 +19648,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7215642422080135723, guid: 3bcbaa28c758c934a95b9d3d86f20c29, type: 3}
       propertyPath: m_LocalRotation.y
-      value: 0.66108626
+      value: 0.99342734
       objectReference: {fileID: 0}
     - target: {fileID: 7215642422080135723, guid: 3bcbaa28c758c934a95b9d3d86f20c29, type: 3}
       propertyPath: m_LocalRotation.z
@@ -19641,7 +19660,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7215642422080135723, guid: 3bcbaa28c758c934a95b9d3d86f20c29, type: 3}
       propertyPath: m_LocalEulerAnglesHint.y
-      value: 82.766
+      value: 166.855
       objectReference: {fileID: 0}
     - target: {fileID: 7215642422080135723, guid: 3bcbaa28c758c934a95b9d3d86f20c29, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
@@ -20217,8 +20236,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e8caca6cca045cc4e92878560c6691c8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  moveSpeed: 10
-  runMultiplier: 2
+  moveSpeed: 20
+  runMultiplier: 0
   jumpForce: 30
   extraGravity: 35
   rotationSpeed: 150
@@ -21304,11 +21323,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: dfe266c9ae6cf3c44878cb61bacb574d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  detectionRadius: 50
-  attackRadius: 20
-  walkSpeed: 2
+  detectionRadius: 20
+  attackRadius: 10
+  walkSpeed: 10
   runSpeed: 4
   attackDamage: 10
+  raycastDistance: 1
 --- !u!4 &1688512529 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: -8679921383154817045, guid: 65c47ba8ff62ca0499873b889f10183e, type: 3}
@@ -21490,11 +21510,6 @@ BoxCollider:
   serializedVersion: 3
   m_Size: {x: 0.005468983, y: 0.006532026, z: 0.011453289}
   m_Center: {x: 0.0011914342, y: 0.0000017768277, z: 0.0016638293}
---- !u!1 &1701134060 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 3296217183451859835, guid: 5986a51f865abde4391cb5356f75b239, type: 3}
-  m_PrefabInstance: {fileID: 2140280361}
-  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &1705281894
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -22320,7 +22335,7 @@ MonoBehaviour:
   excludeZones:
   - {fileID: 2106840386}
   - {fileID: 1550300423}
-  numMonstersToSpawn: 50
+  numMonstersToSpawn: 70
   hoverHeight: 0
 --- !u!1 &1748879071
 GameObject:
@@ -22556,11 +22571,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: dfe266c9ae6cf3c44878cb61bacb574d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  detectionRadius: 50
-  attackRadius: 20
-  walkSpeed: 2
+  detectionRadius: 20
+  attackRadius: 10
+  walkSpeed: 10
   runSpeed: 4
   attackDamage: 10
+  raycastDistance: 1
 --- !u!4 &1772063905 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: -8679921383154817045, guid: 65c47ba8ff62ca0499873b889f10183e, type: 3}
@@ -24042,11 +24058,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: dfe266c9ae6cf3c44878cb61bacb574d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  detectionRadius: 50
-  attackRadius: 20
-  walkSpeed: 2
+  detectionRadius: 20
+  attackRadius: 10
+  walkSpeed: 10
   runSpeed: 5
   attackDamage: 10
+  raycastDistance: 1
 --- !u!4 &1899795084 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: -8679921383154817045, guid: 65c47ba8ff62ca0499873b889f10183e, type: 3}
@@ -24968,7 +24985,7 @@ MonoBehaviour:
   excludeZones:
   - {fileID: 205944284}
   - {fileID: 367429222}
-  numMonstersToSpawn: 50
+  numMonstersToSpawn: 70
   hoverHeight: 0
 --- !u!4 &1953292990 stripped
 Transform:
@@ -25220,11 +25237,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: dfe266c9ae6cf3c44878cb61bacb574d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  detectionRadius: 50
-  attackRadius: 20
-  walkSpeed: 2
+  detectionRadius: 20
+  attackRadius: 10
+  walkSpeed: 10
   runSpeed: 4
   attackDamage: 10
+  raycastDistance: 1
 --- !u!4 &1986124415 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: -8679921383154817045, guid: 65c47ba8ff62ca0499873b889f10183e, type: 3}
@@ -26162,7 +26180,7 @@ MonoBehaviour:
   excludeZones:
   - {fileID: 2140280362}
   - {fileID: 749122542}
-  numMonstersToSpawn: 50
+  numMonstersToSpawn: 70
   hoverHeight: 0
 --- !u!1001 &2033249603
 PrefabInstance:
@@ -27635,7 +27653,7 @@ MonoBehaviour:
   excludeZones:
   - {fileID: 1345271459}
   - {fileID: 1664154647}
-  numMonstersToSpawn: 50
+  numMonstersToSpawn: 70
   hoverHeight: 0
 --- !u!4 &2123016105 stripped
 Transform:
@@ -27858,7 +27876,7 @@ MonoBehaviour:
   excludeZones:
   - {fileID: 815063226}
   - {fileID: 1419802232}
-  numMonstersToSpawn: 50
+  numMonstersToSpawn: 70
   hoverHeight: 0
 --- !u!4 &2129601379 stripped
 Transform:
@@ -28133,36 +28151,13 @@ PrefabInstance:
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
-    m_AddedComponents:
-    - targetCorrespondingSourceObject: {fileID: 3296217183451859835, guid: 5986a51f865abde4391cb5356f75b239, type: 3}
-      insertIndex: -1
-      addedObject: {fileID: 2140280363}
+    m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 5986a51f865abde4391cb5356f75b239, type: 3}
 --- !u!4 &2140280362 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 3296217183451859836, guid: 5986a51f865abde4391cb5356f75b239, type: 3}
   m_PrefabInstance: {fileID: 2140280361}
   m_PrefabAsset: {fileID: 0}
---- !u!114 &2140280363
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1701134060}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 8411015e889afcb45843b10b39594738, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  monsterPrefabs:
-  - {fileID: 1786443906277501137, guid: f8615070d0c244e4ead18fb1caf6e60e, type: 3}
-  terrain: {fileID: 0}
-  excludeZones:
-  - {fileID: 1427766693}
-  - {fileID: 1996330452}
-  numMonstersToSpawn: 20
-  hoverHeight: 0
 --- !u!4 &4000010423944705 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 8322640928329497740, guid: e30fe60b041cd254f8989e61296076fe, type: 3}
@@ -28610,12 +28605,16 @@ PrefabInstance:
       value: monster_bear01_Body (14)
       objectReference: {fileID: 0}
     - target: {fileID: 3578648317488920908, guid: f8615070d0c244e4ead18fb1caf6e60e, type: 3}
+      propertyPath: walkSpeed
+      value: 10
+      objectReference: {fileID: 0}
+    - target: {fileID: 3578648317488920908, guid: f8615070d0c244e4ead18fb1caf6e60e, type: 3}
       propertyPath: attackRadius
-      value: 20
+      value: 10
       objectReference: {fileID: 0}
     - target: {fileID: 3578648317488920908, guid: f8615070d0c244e4ead18fb1caf6e60e, type: 3}
       propertyPath: detectionRadius
-      value: 50
+      value: 20
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []

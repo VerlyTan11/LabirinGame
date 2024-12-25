@@ -223,9 +223,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: dfe266c9ae6cf3c44878cb61bacb574d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  detectionRadius: 50
-  attackRadius: 20
-  walkSpeed: 20
+  detectionRadius: 30
+  attackRadius: 10
+  walkSpeed: 10
   runSpeed: 20
   attackDamage: 10
 --- !u!4 &8155348832980573445 stripped
