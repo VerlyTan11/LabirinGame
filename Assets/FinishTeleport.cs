@@ -1,23 +1,26 @@
-using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
 
 public class FinishTeleport : MonoBehaviour
 {
-    // Referensi ke objek target
-    public Transform targetObject;
+    public Transform targetObject; // Objek target untuk teleport
 
-    // Event trigger ketika karakter memasuki portal
     private void OnTriggerEnter(Collider other)
     {
-        // Pastikan objek yang masuk adalah karakter (misalnya, tag "Player")
+        // Pastikan objek yang masuk adalah pemain
         if (other.CompareTag("Player"))
         {
-            // Teleport karakter ke posisi target
-            other.transform.position = targetObject.position;
-
-            // Opsional: tambahkan efek visual/suara di sini
-            Debug.Log("Karakter telah dipindahkan ke target Paradise");
+            // Periksa apakah semua gems telah dikumpulkan
+            if (UIManager.Instance.AreAllGemsCollected())
+            {
+                // Teleport pemain
+                other.transform.position = targetObject.position;
+                Debug.Log("Semua gems telah dikumpulkan! Pemain dipindahkan.");
+            }
+            else
+            {
+                // Tampilkan pesan jika belum semua gems terkumpul
+                Debug.Log("Gems belum lengkap. Kumpulkan semua gems untuk melanjutkan.");
+            }
         }
     }
 }

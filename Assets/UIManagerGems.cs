@@ -12,6 +12,7 @@ public class UIManager : MonoBehaviour
         public string gemType; // Jenis gems
         public Image gemImage; // Komponen Image di UI
         public Sprite foundSprite; // Sprite untuk gems yang sudah ditemukan
+        public bool isCollected = false; // Status apakah gems sudah dikumpulkan
     }
 
     public List<GemDisplay> gemDisplays; // List untuk semua gems di UI
@@ -32,15 +33,28 @@ public class UIManager : MonoBehaviour
     {
         foreach (var display in gemDisplays)
         {
-            if (display.gemType == gemType)
+            if (display.gemType == gemType && !display.isCollected)
             {
-                // Ubah gambar menjadi sprite berwarna
-                display.gemImage.sprite = display.foundSprite;
+                display.gemImage.sprite = display.foundSprite; // Ubah gambar menjadi sprite ditemukan
+                display.isCollected = true; // Tandai gems sebagai terkumpul
                 Debug.Log($"Gem {gemType} collected and updated in UI!");
                 return;
             }
         }
 
-        Debug.LogWarning($"Gem {gemType} not found in UI!");
+        Debug.LogWarning($"Gem {gemType} not found in UI or already collected!");
+    }
+
+    public bool AreAllGemsCollected()
+    {
+        // Periksa apakah semua gems sudah dikumpulkan
+        foreach (var display in gemDisplays)
+        {
+            if (!display.isCollected)
+            {
+                return false;
+            }
+        }
+        return true;
     }
 }
