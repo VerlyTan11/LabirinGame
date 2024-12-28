@@ -1,6 +1,6 @@
 %YAML 1.1
 %TAG !u! tag:unity3d.com,2011:
---- !u!1 &3005372896928458554
+--- !u!1 &6406034090335227662
 GameObject:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -8,12 +8,12 @@ GameObject:
   m_PrefabAsset: {fileID: 0}
   serializedVersion: 6
   m_Component:
-  - component: {fileID: 6042544961876112226}
-  - component: {fileID: 5157503161743128115}
-  - component: {fileID: 4828403649777712168}
-  - component: {fileID: 8765569947951119884}
-  - component: {fileID: 4133079920576784850}
-  - component: {fileID: 2847195521038400035}
+  - component: {fileID: 6407345105015415246}
+  - component: {fileID: 6381740066583136872}
+  - component: {fileID: 6392004195061842424}
+  - component: {fileID: 8020175674914578034}
+  - component: {fileID: 2643687764188964907}
+  - component: {fileID: 4157213598822635638}
   m_Layer: 0
   m_Name: Spiral
   m_TagString: Gem
@@ -21,36 +21,36 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!4 &6042544961876112226
+--- !u!4 &6407345105015415246
 Transform:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 3005372896928458554}
+  m_GameObject: {fileID: 6406034090335227662}
   serializedVersion: 2
   m_LocalRotation: {x: -0.7071068, y: -0, z: -0, w: 0.7071068}
-  m_LocalPosition: {x: -99.33, y: -19.2, z: -8.925}
+  m_LocalPosition: {x: -70.25241, y: -15.994848, z: 29.611038}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: -90, y: 0, z: 0}
---- !u!33 &5157503161743128115
+--- !u!33 &6381740066583136872
 MeshFilter:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 3005372896928458554}
+  m_GameObject: {fileID: 6406034090335227662}
   m_Mesh: {fileID: 4300000, guid: 973011b81536fe2408cc13aa49700e3b, type: 3}
---- !u!23 &4828403649777712168
+--- !u!23 &6392004195061842424
 MeshRenderer:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 3005372896928458554}
+  m_GameObject: {fileID: 6406034090335227662}
   m_Enabled: 1
   m_CastShadows: 1
   m_ReceiveShadows: 1
@@ -86,25 +86,25 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
---- !u!114 &8765569947951119884
+--- !u!114 &8020175674914578034
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 3005372896928458554}
+  m_GameObject: {fileID: 6406034090335227662}
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 6da5601913dbceb40872696963873ebb, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
---- !u!65 &4133079920576784850
+--- !u!65 &2643687764188964907
 BoxCollider:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 3005372896928458554}
+  m_GameObject: {fileID: 6406034090335227662}
   m_Material: {fileID: 0}
   m_IncludeLayers:
     serializedVersion: 2
@@ -113,19 +113,19 @@ BoxCollider:
     serializedVersion: 2
     m_Bits: 0
   m_LayerOverridePriority: 0
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_ProvidesContacts: 0
   m_Enabled: 1
   serializedVersion: 3
   m_Size: {x: 2.4184656, y: 1.0800005, z: 2.418465}
-  m_Center: {x: 0.00012207031, y: 0.00001335144, z: 0}
---- !u!114 &2847195521038400035
+  m_Center: {x: 0.000061035156, y: -0.000076293945, z: -0.0000015497208}
+--- !u!114 &4157213598822635638
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 3005372896928458554}
+  m_GameObject: {fileID: 6406034090335227662}
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 100cc7138319c0440a1b4413441bedb2, type: 3}
