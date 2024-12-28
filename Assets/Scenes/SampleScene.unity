@@ -9903,7 +9903,7 @@ MonoBehaviour:
     foundSprite: {fileID: 21300000, guid: 83c21ffb97b26874a89c4b95749a976b, type: 3}
   - gemType: Penta
     gemImage: {fileID: 1813684960}
-    foundSprite: {fileID: 21300000, guid: 26f9b878d6eb5f9429de93a56c66caf3, type: 3}
+    foundSprite: {fileID: 21300000, guid: bb0b76fc274e611418f020beb5dd5610, type: 3}
   - gemType: Diamondo
     gemImage: {fileID: 480595428}
     foundSprite: {fileID: 21300000, guid: 425784e23518c8b49b39413408f16404, type: 3}
