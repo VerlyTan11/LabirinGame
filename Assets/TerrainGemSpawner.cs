@@ -33,6 +33,14 @@ public class TerrainGemSpawner : MonoBehaviour
                 GameObject gemPrefab = gemPrefabs[spawnedGems % gemPrefabs.Length];
                 GameObject spawnedGem = Instantiate(gemPrefab, randomPosition, gemPrefab.transform.rotation);
 
+                Light gemLight = spawnedGem.AddComponent<Light>();
+                gemLight.type = LightType.Spot; // Gunakan tipe Spot Light
+                gemLight.color = Color.yellow; // Warna cahaya (sesuaikan dengan tema gems Anda)
+                gemLight.intensity = 30.0f; // Tingkat intensitas cahaya
+                gemLight.range = 100.0f; // Jarak pancaran cahaya
+                gemLight.spotAngle = 10.0f; // Sudut sempit untuk efek tembakan
+                gemLight.transform.rotation = Quaternion.Euler(-90, 0, 0); // Arahkan cahaya ke atas
+
                 FloatingGem floatingGem = spawnedGem.AddComponent<FloatingGem>();
                 floatingGem.floatSpeed = floatSpeed;
                 floatingGem.floatAmplitude = floatAmplitude;

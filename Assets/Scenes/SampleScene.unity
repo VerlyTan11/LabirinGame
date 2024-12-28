@@ -1252,10 +1252,12 @@ MonoBehaviour:
   excludeZones:
   - {fileID: 853561988}
   - {fileID: 1371192361}
+  validSpawnArea: {fileID: 0}
   numGemsToSpawn: 8
   hoverHeight: 1.5
   floatSpeed: 2
   floatAmplitude: 0.5
+  maxTerrainHeight: 20
 --- !u!114 &92169295
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3593,10 +3595,12 @@ MonoBehaviour:
   excludeZones:
   - {fileID: 1427766693}
   - {fileID: 1996330452}
+  validSpawnArea: {fileID: 0}
   numGemsToSpawn: 8
   hoverHeight: 1.5
   floatSpeed: 2
   floatAmplitude: 0.5
+  maxTerrainHeight: 20
 --- !u!65 &288309162
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -5818,10 +5822,12 @@ MonoBehaviour:
   excludeZones:
   - {fileID: 1914846276}
   - {fileID: 1705281895}
+  validSpawnArea: {fileID: 0}
   numGemsToSpawn: 8
   hoverHeight: 1.5
   floatSpeed: 2
   floatAmplitude: 0.5
+  maxTerrainHeight: 20
 --- !u!114 &450756898
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -11789,10 +11795,12 @@ MonoBehaviour:
   excludeZones:
   - {fileID: 1661605070}
   - {fileID: 297440966}
+  validSpawnArea: {fileID: 0}
   numGemsToSpawn: 8
   hoverHeight: 1.5
   floatSpeed: 2
   floatAmplitude: 0.5
+  maxTerrainHeight: 20
 --- !u!114 &938838995
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -13102,10 +13110,12 @@ MonoBehaviour:
   excludeZones:
   - {fileID: 1528113918}
   - {fileID: 1288422934}
+  validSpawnArea: {fileID: 0}
   numGemsToSpawn: 8
   hoverHeight: 1.5
   floatSpeed: 2
   floatAmplitude: 0.5
+  maxTerrainHeight: 20
 --- !u!114 &1038085669
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -22923,10 +22933,12 @@ MonoBehaviour:
   excludeZones:
   - {fileID: 2106840386}
   - {fileID: 1550300423}
+  validSpawnArea: {fileID: 0}
   numGemsToSpawn: 8
   hoverHeight: 1.5
   floatSpeed: 2
   floatAmplitude: 0.5
+  maxTerrainHeight: 20
 --- !u!114 &1746308760
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -25714,10 +25726,12 @@ MonoBehaviour:
   excludeZones:
   - {fileID: 367429222}
   - {fileID: 205944284}
+  validSpawnArea: {fileID: 0}
   numGemsToSpawn: 8
   hoverHeight: 1.5
   floatSpeed: 2
   floatAmplitude: 0.5
+  maxTerrainHeight: 20
 --- !u!114 &1947331084
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -27006,10 +27020,12 @@ MonoBehaviour:
   excludeZones:
   - {fileID: 749122542}
   - {fileID: 2140280362}
+  validSpawnArea: {fileID: 0}
   numGemsToSpawn: 8
   hoverHeight: 1.5
   floatSpeed: 2
   floatAmplitude: 0.5
+  maxTerrainHeight: 20
 --- !u!114 &2023839332
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -28577,10 +28593,12 @@ MonoBehaviour:
   excludeZones:
   - {fileID: 1664154647}
   - {fileID: 1345271459}
+  validSpawnArea: {fileID: 0}
   numGemsToSpawn: 8
   hoverHeight: 1.5
   floatSpeed: 2
   floatAmplitude: 0.5
+  maxTerrainHeight: 20
 --- !u!114 &2119508244
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -28800,10 +28818,12 @@ MonoBehaviour:
   excludeZones:
   - {fileID: 815063226}
   - {fileID: 1419802232}
+  validSpawnArea: {fileID: 0}
   numGemsToSpawn: 8
   hoverHeight: 1.5
   floatSpeed: 2
   floatAmplitude: 0.5
+  maxTerrainHeight: 20
 --- !u!114 &2126833740
 MonoBehaviour:
   m_ObjectHideFlags: 0
