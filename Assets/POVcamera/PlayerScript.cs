@@ -125,9 +125,9 @@ public class PlayerScript : MonoBehaviour
     private Animator animator;      // Komponen Animator
     private Rigidbody rb;           // Komponen Rigidbody
 
-    public float moveSpeed = 5f;    // Kecepatan berjalan
-    public float runMultiplier = 2f; // Faktor pengali untuk lari
-    public float jumpForce = 5f;    // Kekuatan lompat
+    public float moveSpeed = 20f;    // Kecepatan berjalan
+    public float runMultiplier = 1f; // Faktor pengali untuk lari
+    public float jumpForce = 30f;    // Kekuatan lompat
     public float extraGravity = 10f; // Gaya gravitasi tambahan
     public float rotationSpeed = 100f; // Kecepatan rotasi kamera
 
@@ -137,7 +137,7 @@ public class PlayerScript : MonoBehaviour
 
     private bool isJumping = false; // Mengecek apakah sedang lompat
 
-    void Awake()
+   void Awake()
     {
         // Ambil komponen Animator dan Rigidbody
         animator = GetComponent<Animator>();
@@ -164,27 +164,26 @@ public class PlayerScript : MonoBehaviour
     private void HandleMovement()
     {
         // Ambil input pergerakan
-        float translation = Input.GetAxis("Vertical") * moveSpeed;
-        float rotation = Input.GetAxis("Horizontal") * rotationSpeed;
+        float vertical = Input.GetAxis("Vertical") * moveSpeed; // Maju/mundur
+        float horizontal = Input.GetAxis("Horizontal") * moveSpeed; // Kiri/kanan
 
         // Cek jika tombol lari (Shift kiri) ditekan
         bool isRunning = Input.GetKey(KeyCode.LeftShift);
         if (isRunning)
         {
-            translation *= runMultiplier;
+            vertical *= runMultiplier;
+            horizontal *= runMultiplier;
         }
 
         // Normalisasi kecepatan berdasarkan waktu
-        translation *= Time.deltaTime;
-        rotation *= Time.deltaTime;
+        vertical *= Time.deltaTime;
+        horizontal *= Time.deltaTime;
 
-        // Gerakkan karakter maju/mundur
-        transform.Translate(0, 0, translation);
-        // Putar karakter
-        transform.Rotate(0, rotation, 0);
+        // Gerakkan karakter secara horizontal (kiri/kanan) dan vertikal (maju/mundur)
+        transform.Translate(horizontal, 0, vertical);
 
         // Atur animasi berdasarkan status berjalan atau lari
-        if (translation != 0)
+        if (vertical != 0 || horizontal != 0)
         {
             animator.SetBool("isWalking", !isRunning);
             animator.SetBool("isRunning", isRunning);
