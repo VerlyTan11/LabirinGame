@@ -20525,11 +20525,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e8caca6cca045cc4e92878560c6691c8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  moveSpeed: 20
-  runMultiplier: 0
+  moveSpeed: 10
+  runMultiplier: 2
   jumpForce: 30
-  extraGravity: 35
   rotationSpeed: 150
+  extraGravity: 35
   minimumY: -60
   maximumY: 60
 --- !u!114 &1617334951
